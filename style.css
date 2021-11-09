@@ -1,0 +1,33 @@
+
+        .links-hover::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #F33535;
+    transition: width .3s;
+}
+
+.links-hover:hover{
+    color: white;
+}
+
+.links-hover:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+body{
+    background-color: #eeeefd;
+}
+footer{
+    background-color: #29252C;
+    color: white;
+    padding-top:58px;
+}
+
+.fooot{
+    text-decoration: none;
+    text-align:left;
+}
+    
