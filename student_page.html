@@ -12,19 +12,63 @@
     <link rel="stylesheet" href="style.css">
     <title>Innerve Institute of Technology</title>
     <style>
-        <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+.h_class{
+  text-align: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color:#F33535;
+}
+.img_class{
+  width:300px;
+  height:300px;
+
+}
+.profile_form{
+  padding-top: 25px;
+}
+button{
+  background-color: #33425B;
+  color: white;
+  border-radius: 3px;;
+}
+.result_page{
+  width: 300px;
+  height:250px;
+  border-radius: 1px solid #29252C;
+  text-align: center;
+  background-color: #D8E9F0;
+  color:#33425B;
+}
+.syllabus{
+  text-align: center;
+  width:800px;
+  height:80px;
+  background-color:#33425B ;
+  color:white;
+  border-radius:10px;
+  padding-left:100px;
+
+}
 body 
 {
     padding-top: 50px;
   font-family: 'Poppins', sans-serif;
+  
+  
+}
+
+.honey_sec{
   background: #33425B;
+  height:600px;
 }
 .honey_a{
     color:white;
@@ -121,6 +165,7 @@ body
 .honeycomb-cell:hover 
 .honeycomb-cell_title {
   opacity: 0;
+  color:black;
 }
 .honeycomb-cell:hover 
 .honeycomb-cell_image
@@ -132,6 +177,7 @@ body
 }
 .honeycomb-cell:hover::after {
   opacity: 0;
+  
 }
 .honeycomb_placeholder {
   display: none;
@@ -199,7 +245,8 @@ body
 
 
 
-</style>
+
+
 
 
 
@@ -226,6 +273,7 @@ body
 		</div>
 	</nav>
 	<!--end of nav bar-->
+  <div class="honey_sec">
     <ul class="honeycomb">
         <li class="honeycomb-cell">
           <img class="honeycomb-cell_image" src="images/s2.jpg">
@@ -257,8 +305,98 @@ body
         </li>
         <li class="honeycomb-cell honeycomb_placeholder">
         </li>
-      </ul>
-     
+    </ul>
+  </div><br><br><br>
+  
+    <scetion id="profile">
+      <div class="h_class">
+        <h3 >Student Profile</h3>
+
+      </div><br><hr>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img class="img_class" src="images/profile.jpg">
+          </div>
+          <div class="col">
+            <form class="profile_form">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              
+              <button type="submit" >View Profile</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </scetion>  <br><br>
+
+
+
+    <scetion id="results">
+      <div class="h_class">
+        <h3 >Results</h3>
+
+      </div><br><hr><br><br>
+      
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card result_page">
+              <div class="card-body">
+                <h5 class="card-title">See your Results</h5>
+                <p class="card-text">Have any problem with the result contact the respective people</p>
+                <a href="#" class="btn btn-primary">INTERNALS</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card result_page">
+              <div class="card-body">
+                <h5 class="card-title">See your Results</h5>
+                <p class="card-text">Have any problem with the result contact the respective people</p>
+                <a href="#" class="btn btn-primary">SGPA</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card result_page">
+              <div class="card-body">
+                <h5 class="card-title">See your Results</h5>
+                <p class="card-text">Have any problem with the result contact the respective people</p>
+                <a href="#" class="btn btn-primary">CGPA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </scetion>  <br><br><br><br>
+    <section id="syllabus">
+      <div class="h_class">
+        <h3 >Syllabus</h3>
+
+      </div><br><hr><br><br>
+      <div class="syllabus">
+        <p>wanna know the syllabus of your semester.Just get into the below link and explore</p>
+        <button type="submit" >View Syllabus</button>
+      </div>
+
+    </section> 
+
+
+
+
+  
     
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
